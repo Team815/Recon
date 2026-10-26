@@ -1,11 +1,161 @@
 [gd_scene format=3 uid="uid://5n5juoihtkaa"]
 
 [ext_resource type="Script" uid="uid://bp06cqx6gkaj2" path="res://test.gd" id="1_37kl0"]
+[ext_resource type="PackedScene" uid="uid://b03r6vae1xpcb" path="res://team_ranking_view.tscn" id="2_8uh7m"]
+[ext_resource type="PackedScene" uid="uid://klw37mxbpdhw" path="res://alliance_view.tscn" id="3_6uqi0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6uqi0"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ppyta"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ykrsh"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 1, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g14j6"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 1, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vbegm"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ehkex"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xersf"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0.49411765, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77dp3"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
 
 [node name="Test" type="Node" unique_id=310716633]
 script = ExtResource("1_37kl0")
 
-[node name="Teams" type="VBoxContainer" parent="." unique_id=794188838]
+[node name="Teams" parent="." unique_id=1672986828 instance=ExtResource("2_8uh7m")]
 unique_name_in_owner = true
-offset_right = 40.0
-offset_bottom = 40.0
+
+[node name="Alliances" type="GridContainer" parent="." unique_id=1171661376]
+offset_left = 637.0
+offset_top = 41.0
+offset_right = 677.0
+offset_bottom = 81.0
+columns = 2
+
+[node name="Alliance1" parent="Alliances" unique_id=1964615314 instance=ExtResource("3_6uqi0")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6uqi0")
+number = 1
+color = Color(1, 0, 0, 1)
+
+[node name="Alliance2" parent="Alliances" unique_id=1576972603 instance=ExtResource("3_6uqi0")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ppyta")
+number = 2
+color = Color(0, 0, 1, 1)
+
+[node name="Alliance3" parent="Alliances" unique_id=1558068976 instance=ExtResource("3_6uqi0")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ykrsh")
+number = 3
+color = Color(0, 1, 0, 1)
+
+[node name="Alliance4" parent="Alliances" unique_id=729117296 instance=ExtResource("3_6uqi0")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g14j6")
+number = 4
+color = Color(1, 1, 0, 1)
+
+[node name="Alliance5" parent="Alliances" unique_id=391938407 instance=ExtResource("3_6uqi0")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vbegm")
+number = 5
+color = Color(1, 0, 1, 1)
+
+[node name="Alliance6" parent="Alliances" unique_id=835124592 instance=ExtResource("3_6uqi0")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ehkex")
+number = 1
+color = Color(0, 1, 1, 1)
+
+[node name="Alliance7" parent="Alliances" unique_id=1247148344 instance=ExtResource("3_6uqi0")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xersf")
+number = 1
+color = Color(1, 0.49411765, 0, 1)
+
+[node name="Alliance8" parent="Alliances" unique_id=1374581832 instance=ExtResource("3_6uqi0")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_77dp3")
+number = 1

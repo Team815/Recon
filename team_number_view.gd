@@ -6,9 +6,13 @@ var number: int:
 		number = value
 		%Number.text = str(number)
 
+
+signal reordered(dragged: TeamNumberView, dropped: TeamNumberView)
+
+
 func _get_drag_data(at_position: Vector2) -> Variant:
 	set_drag_preview(duplicate())
-	return number
+	return self
 
 
 func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
@@ -19,12 +23,5 @@ func _drop_data(at_position: Vector2, data: Variant) -> void:
 	_drop_team(data)
 
 
-func _drop_team(team_number: int) -> void:
-	print(team_number, " was dropped on ", number)
-	#var children = %Teams.get_children()
-	#var dragged_team: TeamNumberView
-	#for child: TeamNumberView in children:
-		#if child.number == team_number:
-			#dragged_team = child
-			#break
-	#%Teams.remove_child(dragged_team)
+func _drop_team(team: TeamNumberView) -> void:
+	reordered.emit(team, self)

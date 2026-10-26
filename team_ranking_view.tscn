@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b03r6vae1xpcb"]
+
+[ext_resource type="Script" uid="uid://c566y7ui3vujy" path="res://team_ranking_view.gd" id="1_r1ao7"]
+
+[node name="TeamRankingView" type="VBoxContainer" unique_id=1672986828]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_r1ao7")

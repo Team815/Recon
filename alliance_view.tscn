@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://klw37mxbpdhw"]
+
+[ext_resource type="Script" uid="uid://cn767a2rctq1x" path="res://alliance_view.gd" id="1_1aj48"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1aj48"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="AllianceView" type="PanelContainer" unique_id=1964615314]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1aj48")
+script = ExtResource("1_1aj48")
+
+[node name="Contents" type="VBoxContainer" parent="." unique_id=132175392]
+layout_mode = 2
+
+[node name="AllianceName" type="Label" parent="Contents" unique_id=2131427302]
+unique_name_in_owner = true
+layout_mode = 2
+text = "A0"
+horizontal_alignment = 1
+
+[node name="Teams" type="VBoxContainer" parent="Contents" unique_id=1927417760]
+layout_mode = 2
