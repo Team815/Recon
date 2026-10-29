@@ -2,8 +2,13 @@ extends Node
 
 
 func _ready() -> void:
-	%Teams.add_team(815)
-	%Teams.add_team(123)
-	%Teams.add_team(67)
-	%Teams.add_team(2619)
-	%Teams.add_team(88888)
+	add_team(815)
+	add_team(123)
+	add_team(67)
+	add_team(2619)
+	add_team(88888)
+
+
+func add_team(team_number: int) -> void:
+	var team: TeamNumberView = %Teams.add_team(team_number)
+	team.unally.connect(%Alliances.unally)

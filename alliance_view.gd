@@ -1,12 +1,11 @@
 @tool
-extends PanelContainer
+class_name AllianceView extends PanelContainer
 
 
 @export var number: int:
 	set(value):
 		number = value
-		if is_node_ready():
-			%AllianceName.text = "A%d" % number
+		%AllianceName.text = "A%d" % number
 
 
 @export var color: Color:
@@ -17,5 +16,22 @@ extends PanelContainer
 		add_theme_stylebox_override("panel", box)
 
 
-func _ready() -> void:
-	number = number
+signal dropped(team: TeamNumberView, alliance: AllianceView)
+
+
+func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
+	return true
+
+
+func _drop_data(at_position: Vector2, data: Variant) -> void:
+	_drop_team(data)
+
+
+func _drop_team(team: TeamNumberView) -> void:
+	dropped.emit(team, self)
+
+
+func add_team(team: int) -> void:
+	var team_label := Label.new()
+	team_label.text = str(team)
+	%Teams.add_child(team_label)

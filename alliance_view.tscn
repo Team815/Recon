@@ -30,4 +30,5 @@ text = "A0"
 horizontal_alignment = 1
 
 [node name="Teams" type="VBoxContainer" parent="Contents" unique_id=1927417760]
+unique_name_in_owner = true
 layout_mode = 2

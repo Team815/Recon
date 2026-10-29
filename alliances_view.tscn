@@ -1,0 +1,164 @@
+[gd_scene format=3 uid="uid://ckj2x8hppuiew"]
+
+[ext_resource type="PackedScene" uid="uid://klw37mxbpdhw" path="res://alliance_view.tscn" id="1_6xcot"]
+[ext_resource type="Script" uid="uid://br7uq0q5brney" path="res://alliances_view.gd" id="1_a50og"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a50og"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g5822"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwio8"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 1, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1ag3"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 1, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pri2h"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwsgg"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jfagu"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 0.49411765, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57fug"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Alliances" type="GridContainer" unique_id=1474463052]
+offset_left = 637.0
+offset_top = 41.0
+offset_right = 677.0
+offset_bottom = 81.0
+columns = 2
+script = ExtResource("1_a50og")
+
+[node name="Alliance1" parent="." unique_id=1964615314 instance=ExtResource("1_6xcot")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_a50og")
+number = 1
+color = Color(1, 0, 0, 1)
+
+[node name="Alliance2" parent="." unique_id=731318161 instance=ExtResource("1_6xcot")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5822")
+number = 2
+color = Color(0, 0, 1, 1)
+
+[node name="Alliance3" parent="." unique_id=1028040082 instance=ExtResource("1_6xcot")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cwio8")
+number = 3
+color = Color(0, 1, 0, 1)
+
+[node name="Alliance4" parent="." unique_id=332174116 instance=ExtResource("1_6xcot")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_e1ag3")
+number = 4
+color = Color(1, 1, 0, 1)
+
+[node name="Alliance5" parent="." unique_id=908837770 instance=ExtResource("1_6xcot")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_pri2h")
+number = 5
+color = Color(1, 0, 1, 1)
+
+[node name="Alliance6" parent="." unique_id=578530440 instance=ExtResource("1_6xcot")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gwsgg")
+number = 6
+color = Color(0, 1, 1, 1)
+
+[node name="Alliance7" parent="." unique_id=946619280 instance=ExtResource("1_6xcot")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jfagu")
+number = 7
+color = Color(1, 0.49411765, 0, 1)
+
+[node name="Alliance8" parent="." unique_id=133726473 instance=ExtResource("1_6xcot")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_57fug")
+number = 8
+
+[connection signal="dropped" from="Alliance1" to="." method="_on_alliance_dropped"]
+[connection signal="dropped" from="Alliance2" to="." method="_on_alliance_dropped"]
+[connection signal="dropped" from="Alliance3" to="." method="_on_alliance_dropped"]
+[connection signal="dropped" from="Alliance4" to="." method="_on_alliance_dropped"]
+[connection signal="dropped" from="Alliance5" to="." method="_on_alliance_dropped"]
+[connection signal="dropped" from="Alliance6" to="." method="_on_alliance_dropped"]
+[connection signal="dropped" from="Alliance7" to="." method="_on_alliance_dropped"]
+[connection signal="dropped" from="Alliance8" to="." method="_on_alliance_dropped"]
