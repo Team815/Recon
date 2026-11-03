@@ -3,6 +3,23 @@
 [ext_resource type="Script" uid="uid://c566y7ui3vujy" path="res://team_ranking_view.gd" id="1_r1ao7"]
 
 [node name="TeamRankingView" type="VBoxContainer" unique_id=1672986828]
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 256.0
+grow_vertical = 2
 script = ExtResource("1_r1ao7")
+
+[node name="HideAllied" type="CheckBox" parent="." unique_id=1884412118]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Hide allied teams"
+
+[node name="ScrollableTeams" type="ScrollContainer" parent="." unique_id=2008101802]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Teams" type="VBoxContainer" parent="ScrollableTeams" unique_id=1550892397]
+unique_name_in_owner = true
+layout_mode = 2
+
+[connection signal="toggled" from="HideAllied" to="." method="_on_hide_allied_toggled"]

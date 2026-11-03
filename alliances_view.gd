@@ -1,18 +1,14 @@
 extends GridContainer
 
 
-var allied_teams: Dictionary[int, AllianceView]
+var allied_teams: Array[TeamNumberView]
 
 
 func _on_alliance_dropped(team: TeamNumberView, alliance: AllianceView) -> void:
-	if allied_teams.has(team.number):
-		print("Team %d is already on an alliance" % team.number)
-		return
-	allied_teams[team.number] = alliance
-	alliance.add_team(team.number)
-	team.color = alliance.color
-	team.show_unally_button()
+	allied_teams.append(team)
+	alliance.add_team(team)
 
 
-func unally(team: int) -> void:
-	print("Team %d is unallying" % team)
+func unally(team: TeamNumberView) -> void:
+	team.alliance.remove_team(team.number)
+	allied_teams.erase(team)

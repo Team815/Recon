@@ -1,6 +1,11 @@
 class_name TeamNumberView extends PanelContainer
 
 
+signal reordered(dragged: TeamNumberView, dropped: TeamNumberView)
+signal allied(team: TeamNumberView)
+signal unallied(team: TeamNumberView)
+
+
 var number: int:
 	set(value):
 		number = value
@@ -15,8 +20,16 @@ var color: Color:
 		add_theme_stylebox_override("panel", box)
 
 
-signal reordered(dragged: TeamNumberView, dropped: TeamNumberView)
-signal unally(team: int)
+var alliance: AllianceView:
+	set(value):
+		alliance = value
+		if alliance != null:
+			color = alliance.color
+			%UnallyButton.show()
+			allied.emit(self)
+		else:
+			remove_theme_stylebox_override("panel")
+			%UnallyButton.hide()
 
 
 func _get_drag_data(at_position: Vector2) -> Variant:
@@ -37,10 +50,5 @@ func _drop_team(team: TeamNumberView) -> void:
 
 
 func _on_unally_button_pressed() -> void:
-	color = Color.DIM_GRAY
-	%UnallyButton.hide()
-	unally.emit(number)
-
-
-func show_unally_button() -> void:
-	%UnallyButton.visible = true
+	unallied.emit(self)
+	alliance = null
