@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://5n5juoihtkaa"]
+
+[ext_resource type="Script" uid="uid://bp06cqx6gkaj2" path="res://src/test.gd" id="1_37kl0"]
+[ext_resource type="PackedScene" uid="uid://b03r6vae1xpcb" path="res://src/team_ranking_view.tscn" id="2_8uh7m"]
+[ext_resource type="PackedScene" uid="uid://ckj2x8hppuiew" path="res://src/alliances_view.tscn" id="3_6uqi0"]
+
+[node name="Test" type="Node" unique_id=310716633]
+script = ExtResource("1_37kl0")
+
+[node name="Alliances" parent="." unique_id=1474463052 instance=ExtResource("3_6uqi0")]
+unique_name_in_owner = true
+offset_left = 800.0
+offset_top = 50.0
+offset_right = 1604.0
+offset_bottom = 1662.0
+
+[node name="Teams" parent="." unique_id=1672986828 instance=ExtResource("2_8uh7m")]
+unique_name_in_owner = true

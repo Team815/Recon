@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://durap7swsqorn"]
 
-[ext_resource type="Script" uid="uid://bp5da7qrpekdj" path="res://team_number_view.gd" id="1_kobkt"]
+[ext_resource type="Script" uid="uid://bp5da7qrpekdj" path="res://src/team_number_view.gd" id="1_kobkt"]
 
 [node name="TeamNumberView" type="PanelContainer" unique_id=1398831579]
 custom_minimum_size = Vector2(512, 128)

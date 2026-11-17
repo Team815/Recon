@@ -2,7 +2,7 @@ extends VBoxContainer
 
 
 func add_team(team_number: int) -> TeamNumberView:
-	var team: TeamNumberView = preload("res://team_number_view.tscn").instantiate()
+	var team: TeamNumberView = preload("res://src/team_number_view.tscn").instantiate()
 	team.number = team_number
 	team.allied.connect(_on_team_allied)
 	team.reordered.connect(_on_reordered)

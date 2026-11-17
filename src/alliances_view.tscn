@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://ckj2x8hppuiew"]
 
-[ext_resource type="PackedScene" uid="uid://klw37mxbpdhw" path="res://alliance_view.tscn" id="1_6xcot"]
-[ext_resource type="Script" uid="uid://br7uq0q5brney" path="res://alliances_view.gd" id="1_a50og"]
+[ext_resource type="PackedScene" uid="uid://klw37mxbpdhw" path="res://src/alliance_view.tscn" id="1_6xcot"]
+[ext_resource type="Script" uid="uid://br7uq0q5brney" path="res://src/alliances_view.gd" id="1_a50og"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a50og"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_35v4m"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
@@ -15,7 +15,7 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g5822"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hxb6o"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
@@ -27,72 +27,72 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwio8"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l2ytm"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 0.0
-bg_color = Color(0, 1, 0, 1)
+bg_color = Color(0, 0.627451, 0, 1)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1ag3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bbl43"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 0.0
-bg_color = Color(1, 1, 0, 1)
+bg_color = Color(0.5019608, 0.7529412, 1, 1)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pri2h"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yhyvk"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 0.0
-bg_color = Color(1, 0, 1, 1)
+bg_color = Color(1, 0.3764706, 1, 1)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gwsgg"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xyjd5"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 0.0
-bg_color = Color(0, 1, 1, 1)
+bg_color = Color(0, 0.5019608, 0.5019608, 1)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jfagu"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dt23i"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 0.0
-bg_color = Color(1, 0.49411765, 0, 1)
+bg_color = Color(1, 0.5019608, 0, 1)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57fug"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eadfj"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 0.0
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(0.5019608, 0, 1, 1)
 corner_radius_top_left = 3
 corner_radius_top_right = 3
 corner_radius_bottom_right = 3
@@ -107,50 +107,51 @@ script = ExtResource("1_a50og")
 
 [node name="Alliance1" parent="." unique_id=1964615314 instance=ExtResource("1_6xcot")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_a50og")
+theme_override_styles/panel = SubResource("StyleBoxFlat_35v4m")
 number = 1
 color = Color(1, 0, 0, 1)
 
 [node name="Alliance2" parent="." unique_id=731318161 instance=ExtResource("1_6xcot")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_g5822")
+theme_override_styles/panel = SubResource("StyleBoxFlat_hxb6o")
 number = 2
 color = Color(0, 0, 1, 1)
 
 [node name="Alliance3" parent="." unique_id=1028040082 instance=ExtResource("1_6xcot")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_cwio8")
+theme_override_styles/panel = SubResource("StyleBoxFlat_l2ytm")
 number = 3
-color = Color(0, 1, 0, 1)
+color = Color(0, 0.627451, 0, 1)
 
 [node name="Alliance4" parent="." unique_id=332174116 instance=ExtResource("1_6xcot")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_e1ag3")
+theme_override_styles/panel = SubResource("StyleBoxFlat_bbl43")
 number = 4
-color = Color(1, 1, 0, 1)
+color = Color(0.5019608, 0.7529412, 1, 1)
 
 [node name="Alliance5" parent="." unique_id=908837770 instance=ExtResource("1_6xcot")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_pri2h")
+theme_override_styles/panel = SubResource("StyleBoxFlat_yhyvk")
 number = 5
-color = Color(1, 0, 1, 1)
+color = Color(1, 0.3764706, 1, 1)
 
 [node name="Alliance6" parent="." unique_id=578530440 instance=ExtResource("1_6xcot")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_gwsgg")
+theme_override_styles/panel = SubResource("StyleBoxFlat_xyjd5")
 number = 6
-color = Color(0, 1, 1, 1)
+color = Color(0, 0.5019608, 0.5019608, 1)
 
 [node name="Alliance7" parent="." unique_id=946619280 instance=ExtResource("1_6xcot")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_jfagu")
+theme_override_styles/panel = SubResource("StyleBoxFlat_dt23i")
 number = 7
-color = Color(1, 0.49411765, 0, 1)
+color = Color(1, 0.5019608, 0, 1)
 
 [node name="Alliance8" parent="." unique_id=133726473 instance=ExtResource("1_6xcot")]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_57fug")
+theme_override_styles/panel = SubResource("StyleBoxFlat_eadfj")
 number = 8
+color = Color(0.5019608, 0, 1, 1)
 
 [connection signal="dropped" from="Alliance1" to="." method="_on_alliance_dropped"]
 [connection signal="dropped" from="Alliance2" to="." method="_on_alliance_dropped"]

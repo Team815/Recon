@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://klw37mxbpdhw"]
 
-[ext_resource type="Script" uid="uid://cn767a2rctq1x" path="res://alliance_view.gd" id="1_1aj48"]
+[ext_resource type="Script" uid="uid://cn767a2rctq1x" path="res://src/alliance_view.gd" id="1_1aj48"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1aj48"]
 content_margin_left = 0.0

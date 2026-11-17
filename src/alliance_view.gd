@@ -40,6 +40,7 @@ func add_team(team: TeamNumberView) -> void:
 	team.alliance = self
 	var team_label := Label.new()
 	team_label.text = str(team.number)
+	team_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	%Teams.add_child(team_label)
 
 
