@@ -100,10 +100,8 @@ corner_radius_bottom_left = 3
 corner_detail = 5
 
 [node name="Alliances" type="GridContainer" unique_id=1474463052]
-offset_left = 637.0
-offset_top = 41.0
-offset_right = 677.0
-offset_bottom = 81.0
+offset_right = 404.0
+offset_bottom = 520.0
 columns = 2
 script = ExtResource("1_a50og")
 

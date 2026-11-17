@@ -14,7 +14,17 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_1aj48"]
+color = Color(1, 1, 1, 1)
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 4
+
+[sub_resource type="Theme" id="Theme_1aj48"]
+default_font_size = 50
+
 [node name="AllianceView" type="PanelContainer" unique_id=1964615314]
+custom_minimum_size = Vector2(400, 400)
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_1aj48")
@@ -26,9 +36,15 @@ layout_mode = 2
 [node name="AllianceName" type="Label" parent="Contents" unique_id=2131427302]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 72
 text = "A0"
 horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Contents" unique_id=1392173770]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_1aj48")
 
 [node name="Teams" type="VBoxContainer" parent="Contents" unique_id=1927417760]
 unique_name_in_owner = true
 layout_mode = 2
+theme = SubResource("Theme_1aj48")

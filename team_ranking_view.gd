@@ -12,7 +12,7 @@ func add_team(team_number: int) -> TeamNumberView:
 
 func _on_reordered(dragged: TeamNumberView, dropped: TeamNumberView) -> void:
 	print(dragged.number, " was dropped on ", dropped.number)
-	move_child(dragged, dropped.get_index())
+	%Teams.move_child(dragged, dropped.get_index())
 
 
 func _on_hide_allied_toggled(toggled_on: bool) -> void:
